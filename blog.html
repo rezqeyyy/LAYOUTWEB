@@ -11,8 +11,9 @@
     <header>
         <div class="container navbar">
             <div class="logo">Logo</div>
+            <button class="menu-toggle" id="mobile-menu">&#9776;</button>
             <nav>
-                <ul>
+                <ul id="nav-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="tentang.html">Tentang</a></li>
                     <li><a href="layanan.html">Layanan</a></li>
@@ -23,39 +24,78 @@
         </div>
     </header>
 
-    <main class="container">
-        <h1 class="text-center mb-4">Artikel Terbaru</h1>
-        
-        <div class="grid-3">
-            <div class="card">
-                <div class="img-placeholder">Gambar Artikel</div>
-                <h4>22 Maret 2026</h4>
-                <h3 class="mb-2">Judul Artikel Dummy Pertama</h3>
-                <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros...</p>
-                <a href="#" style="color: #333; font-weight: bold;">Baca Selengkapnya &rarr;</a>
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Blog & Wawasan</h1>
+                <p>Berita terbaru, artikel, dan panduan seputar industri kami.</p>
             </div>
-            <div class="card">
-                <div class="img-placeholder">Gambar Artikel</div>
-                <h4>20 Maret 2026</h4>
-                <h3 class="mb-2">Judul Artikel Dummy Kedua</h3>
-                <p class="mb-2">Pellentesque habitant morbi tristique senectus et netus et malesuada...</p>
-                <a href="#" style="color: #333; font-weight: bold;">Baca Selengkapnya &rarr;</a>
+        </section>
+
+        <section class="container mt-4 mb-4">
+            <div class="grid-3">
+                <article class="card">
+                    <div class="img-placeholder">Thumbnail Artikel</div>
+                    <p style="color: #888; font-size: 0.85rem;" class="mt-2 mb-1">Kategori • 22 Maret 2026</p>
+                    <h3 class="mb-2">Judul Artikel Dummy Pertama yang Menarik Perhatian</h3>
+                    <p class="mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros, pulvinar facilisis justo mollis...</p>
+                    <a href="#" style="color: #333; font-weight: bold; text-decoration: none;">Baca Selengkapnya &rarr;</a>
+                </article>
+                <article class="card">
+                    <div class="img-placeholder">Thumbnail Artikel</div>
+                    <p style="color: #888; font-size: 0.85rem;" class="mt-2 mb-1">Kategori • 18 Maret 2026</p>
+                    <h3 class="mb-2">Strategi Terbaik untuk Mengelola Perusahaan Anda</h3>
+                    <p class="mb-3">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas...</p>
+                    <a href="#" style="color: #333; font-weight: bold; text-decoration: none;">Baca Selengkapnya &rarr;</a>
+                </article>
+                <article class="card">
+                    <div class="img-placeholder">Thumbnail Artikel</div>
+                    <p style="color: #888; font-size: 0.85rem;" class="mt-2 mb-1">Kategori • 10 Maret 2026</p>
+                    <h3 class="mb-2">Inovasi Teknologi di Tahun 2026 yang Wajib Diketahui</h3>
+                    <p class="mb-3">Fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet...</p>
+                    <a href="#" style="color: #333; font-weight: bold; text-decoration: none;">Baca Selengkapnya &rarr;</a>
+                </article>
             </div>
-            <div class="card">
-                <div class="img-placeholder">Gambar Artikel</div>
-                <h4>15 Maret 2026</h4>
-                <h3 class="mb-2">Judul Artikel Dummy Ketiga</h3>
-                <p class="mb-2">Fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae...</p>
-                <a href="#" style="color: #333; font-weight: bold;">Baca Selengkapnya &rarr;</a>
-            </div>
-        </div>
+        </section>
     </main>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2026 Nama Perusahaan. All rights reserved.</p>
+        <div class="container grid-4">
+            <div class="footer-col">
+                <h4>Nama Perusahaan</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>&copy; 2026. All rights reserved.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Link Cepat</h4>
+                <ul>
+                    <li><a href="tentang.html">Tentang</a></li>
+                    <li><a href="layanan.html">Layanan</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="kontak.html">Kontak</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Layanan</h4>
+                <ul>
+                    <li><a href="layanan.html">Layanan Spesialis A</a></li>
+                    <li><a href="layanan.html">Layanan Spesialis B</a></li>
+                    <li><a href="layanan.html">Layanan Spesialis C</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Kontak</h4>
+                <p>Jl. Dummy Raya No. 123, Jakarta</p>
+                <p>+62 812 3456 7890</p>
+                <p>info@perusahaan.com</p>
+            </div>
         </div>
     </footer>
 
+    <script>
+        document.getElementById('mobile-menu').addEventListener('click', function() {
+            document.getElementById('nav-links').classList.toggle('active');
+        });
+    </script>
 </body>
 </html>

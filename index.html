@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Company Profile - Home (Kompleks)</title>
+    <title>Company Profile - Home</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,8 +11,9 @@
     <header>
         <div class="container navbar">
             <div class="logo">Logo</div>
+            <button class="menu-toggle" id="mobile-menu">&#9776;</button>
             <nav>
-                <ul>
+                <ul id="nav-links">
                     <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="tentang.html">Tentang</a></li>
                     <li><a href="layanan.html">Layanan</a></li>
@@ -31,27 +32,14 @@
                         <h1 class="mb-2">Judul Utama Website Disini, Memberikan Kesan Kuat.</h1>
                         <p class="mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                         <a href="layanan.html" class="btn">Lihat Layanan Kami</a>
-                        <a href="kontak.html" class="btn mt-2" style="margin-left: 10px; background-color: #333; color: #fff;">Hubungi Kami</a>
+                        <a href="kontak.html" class="btn btn-dark mt-2" style="margin-left: 10px;">Hubungi Kami</a>
                     </div>
                     <div class="img-placeholder">Gambar Banner Utama (Responsive)</div>
                 </div>
             </div>
         </section>
 
-        <section id="brief-about" class="about-brief container pb-4">
-            <div class="grid-2">
-                <div>
-                    <h2 class="section-title mb-2">Siapa Kami Sebenarnya</h2>
-                </div>
-                <div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
-                    <p class="mt-2">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-                    <a href="tentang.html" class="btn mt-4">Selengkapnya Tentang Kami</a>
-                </div>
-            </div>
-        </section>
-
-        <section id="why-us" class="why-us section-dark pt-4 pb-4 mt-4">
+        <section id="why-us" class="why-us section-dark pt-4 pb-4">
             <div class="container">
                 <h2 class="section-title text-center mb-4">Mengapa Memilih Kami</h2>
                 <div class="grid-3 text-center">
@@ -70,7 +58,7 @@
                 </div>
             </div>
         </section>
-
+        
         <section id="main-services" class="services-brief container pt-4 pb-4 mt-4">
             <h2 class="section-title text-center mb-4">Layanan Utama Kami</h2>
             <div class="grid-3">
@@ -93,69 +81,13 @@
                     <a href="layanan.html" class="btn">Detail</a>
                 </div>
             </div>
-            <div class="text-center mt-4">
-                <a href="layanan.html" class="btn mt-4" style="background-color: #333; color: #fff;">Lihat Semua Layanan</a>
-            </div>
         </section>
 
-        <section id="clients" class="clients container pb-4 mt-4">
-            <h2 class="section-title text-center mb-4">Klien & Mitra Terpercaya</h2>
-            <div class="grid-4 text-center">
-                <div class="img-placeholder">Logo Klien 1</div>
-                <div class="img-placeholder">Logo Klien 2</div>
-                <div class="img-placeholder">Logo Klien 3</div>
-                <div class="img-placeholder">Logo Klien 4</div>
-            </div>
-        </section>
-
-        <section id="testimonials" class="testimonials container pb-4 mt-4">
-            <h2 class="section-title text-center mb-4">Apa Kata Klien Kami</h2>
-            <div class="grid-2 testimonials text-center">
-                <div class="testimonial-card">
-                    <div class="img-placeholder client-avatar">Avatar Client</div>
-                    <p class="mb-2">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros, pulvinar facilisis justo mollis, auctor consequat urna."</p>
-                    <p><strong>- Nama Klien A</strong>, CEO Perusahaan X</p>
-                </div>
-                <div class="testimonial-card">
-                    <div class="img-placeholder client-avatar">Avatar Client</div>
-                    <p class="mb-2">"Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae."</p>
-                    <p><strong>- Nama Klien B</strong>, Direktur Perusahaan Y</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="recent-blog" class="blog-brief container pt-4 pb-4 mt-4">
-            <h2 class="section-title text-center mb-4">Blog & Berita Terbaru</h2>
-            <div class="grid-3">
-                <div class="card">
-                    <div class="img-placeholder">Gambar Artikel 1</div>
-                    <h4>22 Maret 2026</h4>
-                    <h3 class="mb-1">Judul Artikel Dummy Pertama</h3>
-                    <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                    <a href="blog.html" style="color: #333; font-weight: bold;">Baca Selengkapnya &rarr;</a>
-                </div>
-                <div class="card">
-                    <div class="img-placeholder">Gambar Artikel 2</div>
-                    <h4>18 Maret 2026</h4>
-                    <h3 class="mb-1">Judul Artikel Dummy Kedua</h3>
-                    <p class="mb-2">Pellentesque habitant morbi tristique senectus et netus...</p>
-                    <a href="blog.html" style="color: #333; font-weight: bold;">Baca Selengkapnya &rarr;</a>
-                </div>
-                <div class="card">
-                    <div class="img-placeholder">Gambar Artikel 3</div>
-                    <h4>15 Maret 2026</h4>
-                    <h3 class="mb-1">Judul Artikel Dummy Ketiga</h3>
-                    <p class="mb-2">Fames ac turpis egestas. Vestibulum tortor quam...</p>
-                    <a href="blog.html" style="color: #333; font-weight: bold;">Baca Selengkapnya &rarr;</a>
-                </div>
-            </div>
-        </section>
-
-        <section id="cta" class="cta text-center container mt-4">
+        <section id="cta" class="cta text-center mt-4">
             <div class="container">
                 <h2 class="section-title mb-2">Siap Memulai Proyek Anda Bersama Kami?</h2>
-                <p class="mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula.</p>
-                <a href="kontak.html" class="btn" style="background-color: #333; color: #fff;">Hubungi Kami Sekarang</a>
+                <p class="mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="kontak.html" class="btn btn-dark">Hubungi Kami Sekarang</a>
             </div>
         </section>
     </main>
@@ -193,5 +125,10 @@
         </div>
     </footer>
 
+    <script>
+        document.getElementById('mobile-menu').addEventListener('click', function() {
+            document.getElementById('nav-links').classList.toggle('active');
+        });
+    </script>
 </body>
 </html>

@@ -11,8 +11,9 @@
     <header>
         <div class="container navbar">
             <div class="logo">Logo</div>
+            <button class="menu-toggle" id="mobile-menu">&#9776;</button>
             <nav>
-                <ul>
+                <ul id="nav-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="tentang.html" class="active">Tentang</a></li>
                     <li><a href="layanan.html">Layanan</a></li>
@@ -23,28 +24,74 @@
         </div>
     </header>
 
-    <main class="container">
-        <h1 class="text-center mb-4">Tentang Kami</h1>
-        <div class="img-placeholder mb-4" style="height: 300px;">Gambar Tim / Kantor</div>
-        
-        <div class="grid-2 mb-4">
-            <div>
-                <h2 class="mb-2">Sejarah Perusahaan</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Tentang Kami</h1>
+                <p>Mengenal lebih dekat siapa kami dan apa yang kami perjuangkan.</p>
             </div>
-            <div>
-                <h2 class="mb-2">Visi & Misi</h2>
-                <p><strong>Visi:</strong> Lorem ipsum dolor sit amet consectetur.</p>
-                <p><strong>Misi:</strong> 1. Sed do eiusmod tempor. 2. Ut labore et dolore. 3. Magna aliqua ut enim.</p>
+        </section>
+
+        <section class="container mt-4 mb-4">
+            <div class="grid-2">
+                <div class="img-placeholder" style="height: 400px;">Gambar Gedung / Tim Bersama</div>
+                <div>
+                    <h2 class="mb-2">Cerita Perjalanan Kami</h2>
+                    <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                </div>
             </div>
-        </div>
+            
+            <div class="grid-2 mt-4 pt-4" style="border-top: 1px solid #eee;">
+                <div class="card text-center">
+                    <h3 class="mb-2">Visi Kami</h3>
+                    <p>Menjadi perusahaan terdepan yang memberikan solusi inovatif dan berdampak positif bagi masyarakat luas.</p>
+                </div>
+                <div class="card text-center">
+                    <h3 class="mb-2">Misi Kami</h3>
+                    <p>1. Memberikan kualitas terbaik.<br>2. Berinovasi tanpa henti.<br>3. Mengutamakan kepuasan klien.</p>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2026 Nama Perusahaan. All rights reserved.</p>
+        <div class="container grid-4">
+            <div class="footer-col">
+                <h4>Nama Perusahaan</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>&copy; 2026. All rights reserved.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Link Cepat</h4>
+                <ul>
+                    <li><a href="tentang.html">Tentang</a></li>
+                    <li><a href="layanan.html">Layanan</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="kontak.html">Kontak</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Layanan</h4>
+                <ul>
+                    <li><a href="layanan.html">Layanan Spesialis A</a></li>
+                    <li><a href="layanan.html">Layanan Spesialis B</a></li>
+                    <li><a href="layanan.html">Layanan Spesialis C</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Kontak</h4>
+                <p>Jl. Dummy Raya No. 123, Jakarta</p>
+                <p>+62 812 3456 7890</p>
+                <p>info@perusahaan.com</p>
+            </div>
         </div>
     </footer>
 
+    <script>
+        document.getElementById('mobile-menu').addEventListener('click', function() {
+            document.getElementById('nav-links').classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
